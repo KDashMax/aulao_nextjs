@@ -1,7 +1,7 @@
 export default function Navegador(props) {
     
     return (
-        <Link href="/estiloso">
+        <Link href={props.destino}>
             Estiloso
         </Link>
     )
