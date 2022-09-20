@@ -7,9 +7,17 @@ export default function Inicio() {
             <h1>Fundamentos de Next.js & React</h1>
             <h2>Vamos estudar esse framework</h2>
             <h4>* Páginas</h4>
-            <Navegador texto="Estiloso" destino="/estiloso"/>
-            <Navegador texto="Exemplo" destino="/exemplo"/>
-            <Navegador texto="JSX" destino="/jsx"/>
+            <div style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                height: '100vh',
+                flexWrap: 'wrap',
+            }}>
+                <Navegador texto="Estiloso" destino="/estiloso"/>
+                <Navegador texto="Exemplo" destino="/exemplo" cor="#9400d3"/>
+                <Navegador texto="JSX" destino="/jsx" cor="crimson" />
+            </div>
         </>
     )
 }
