@@ -7,9 +7,9 @@ export default function Inicio() {
             <h1>Fundamentos de Next.js & React</h1>
             <h2>Vamos estudar esse framework</h2>
             <h4>* Páginas</h4>
-            <Navegador destino="/estiloso"/>
-            <Navegador destino="/exemplo"/>
-            <Navegador destino="/jsx"/>
+            <Navegador texto="Estiloso" destino="/estiloso"/>
+            <Navegador texto="Exemplo" destino="/exemplo"/>
+            <Navegador texto="JSX" destino="/jsx"/>
         </>
     )
 }
