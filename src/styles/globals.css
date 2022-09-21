@@ -20,6 +20,11 @@ a {
   box-sizing: border-box;
 }
 
+.mainCabecalho h1, .mainCabecalho h2, .mainCabecalho h4 {
+  padding: 0px 8px;
+}
+
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
