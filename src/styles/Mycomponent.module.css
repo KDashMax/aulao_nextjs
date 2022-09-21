@@ -1,0 +1,20 @@
+.ciano {
+    background-color: rgb(50, 231, 231);
+    color: #fff;
+    /* height: 100vh; */
+    height: 78vh;
+}
+
+.ciano h2{
+    margin: 0;
+}
+
+.ciano h2::selection {
+    background-color: rgb(231, 50, 80);
+    color: #000;
+}
+
+.ciano ::selection {
+    background-color: rgb(50, 231, 104);
+    color: #000;
+}

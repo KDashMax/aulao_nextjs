@@ -1,0 +1,17 @@
+.roxo {
+    background-color: #8c25ec;
+    color: #fff;
+    height: 100vh;
+}
+
+.roxo h1 {
+    padding: 8px;
+    margin: 0;
+    background-color: #222;
+}
+
+.roxo h6 {
+    padding: 8px;
+    margin: 0;
+    background-color: #555;
+}
