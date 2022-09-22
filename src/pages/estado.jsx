@@ -2,15 +2,10 @@ import { useState } from "react";
 import Layout from "../components/Layout";
 
 export default function Estodo() {
-    const state = useState(0)
+    const [numero, setNumero] = useState(0)  // React Hooks
     
-    let numero = state[0]
-    let alterarNumero = state[1]
-    
-    // console.log(numero)    
-
     function incrementar( ) {
-        alterarNumero(numero + 1)
+        setNumero(numero + 1)
     }
 
     return (
