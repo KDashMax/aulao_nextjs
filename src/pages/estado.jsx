@@ -1,11 +1,16 @@
+import { useState } from "react";
 import Layout from "../components/Layout";
 
 export default function Estodo() {
-    let numero = 3
+    const state = useState(0)
+    
+    let numero = state[0]
+    let alterarNumero = state[1]
+    
+    // console.log(numero)    
 
     function incrementar( ) {
-        numero += 1
-        console.log(numero)    
+        alterarNumero(numero + 1)
     }
 
     return (
