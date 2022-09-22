@@ -3,13 +3,14 @@ import Layout from "../components/Layout";
 export default function Estodo() {
     let numero = 3
 
-    function incrementar() {
-        console.log('incrementar')    
+    function incrementar( ) {
+        numero += 1
+        console.log(numero)    
     }
 
     return (
         <Layout titulo="Componente com Estado">
-            <span>{numero}</span>
+            <div>{numero}</div>
             <button onClick={incrementar}>Incrementar</button>
         </Layout>
     )
