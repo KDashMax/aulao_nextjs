@@ -6,7 +6,8 @@ export default function ClienteProCodigo() {
 
     return (
         <Layout titulo="Navegação Dinâmica">
-            <span>Código = {router.query.codigo}</span>
+            <div>Código = {router.query.codigo}</div>
+            <div>Filial = {router.query.filial}</div>
         </Layout>
     )
 }
