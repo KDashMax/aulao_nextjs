@@ -4,11 +4,11 @@ export default function Inicio() {
     
     return (
         <> 
-            <div className="mainCabecalho">
+            {/* <div className="mainCabecalho">
                 <h1>Fundamentos de Next.js & React</h1>
                 <h2>Vamos estudar esse framework</h2>
                 <h4>* Páginas:</h4>
-            </div>
+            </div> */}
             <div style={{
                 display: 'flex',
                 justifyContent: 'center',
