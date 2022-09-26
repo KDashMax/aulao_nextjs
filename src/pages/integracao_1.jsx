@@ -3,11 +3,11 @@ import { useState } from 'react'
 import Layout from  '../components/Layout'
 
 export default function Integracao() {
-    
+    const [codigo, setCodigo] = useState(1)
     const [cliente, setCliente] = useState({})
 
     function obterCliente(){
-        fetch('http://localhost:3000/api/clientes/911')
+        fetch(`http://localhost:3000/api/clientes/${codigo}`)
             .then(resp => resp.json())
             .then(dados => setCliente(dados))
     }
@@ -15,7 +15,8 @@ export default function Integracao() {
     return (
         <Layout>
             <div>
-                <input type="number" />
+                <input type="number" value={codigo} 
+                onChange={e => setCodigo(e.target.value)} />
                 <button onClick={obterCliente}>Obter Cliente</button>
             </div>    
             <ul>
